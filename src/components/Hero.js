@@ -12,8 +12,8 @@ class Hero extends Component {
         return (
             <section className={`hero ${size} ${color} ${bold} `}>
                 <a id={this.props.anchor}></a>
-                <div class="hero-body">
-                    <div class="container">
+                <div className="hero-body">
+                    <div className="container">
                         <h1 className='title is-1'>
                             {this.props.title}
                         </h1>
