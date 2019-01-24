@@ -52,6 +52,7 @@ class MusicTopTracks extends Component {
                         <div className="top-tracks-item">
                             <div className="top-tracks-item-cover-div">
                                 <img
+                                    alt="Poster"
                                     src={item.image[2]['#text']}
                                     className="top-tracks-item-cover-img"
                                     onError={

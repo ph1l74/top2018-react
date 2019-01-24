@@ -9,7 +9,7 @@ class Navigation extends Component {
 
         return (
             <section>
-                <div class="tabs is-centered">
+                <div className="tabs is-centered">
                     <ul>
                         {links}
                     </ul>

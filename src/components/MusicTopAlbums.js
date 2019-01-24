@@ -41,7 +41,6 @@ class MusicTopAlbums extends Component {
 
     render() {
         const { error, isLoaded, albums } = this.state;
-        // console.log(albums[0].image);
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
@@ -53,6 +52,7 @@ class MusicTopAlbums extends Component {
                         <div className="top-albums-item">
                             <div className="top-albums-item-cover-div">
                                 <img
+                                    alt="Poster"
                                     src={item.image[2]['#text']}
                                     className="top-albums-item-cover-img"
                                     onError={

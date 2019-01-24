@@ -6,8 +6,8 @@ import './MusicBlock.css';
 class MusicBlock extends Component {
     render() {
         return (
-            <section className={`hero is-medium is-danger is-bold`}>
-                <a id="#music"></a>
+            <section className="hero is-medium is-danger is-bold">
+                <a id="music"></a>
                 <div class="hero-body">
                     <div class="container">
                         <h1 className='title is-2'>Музыка</h1>
