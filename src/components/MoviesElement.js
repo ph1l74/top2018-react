@@ -46,14 +46,14 @@ class MoviesElement extends Component {
 
                 <div className="movies-element">
                     
-                    <figure class="image is-2by3">
+                    <figure className="image is-2by3">
                         <img alt={movie.Title} src={movie.Poster}></img>
                     </figure>
                     <div className="movies-element-info">
                         <div className="movies-element-info-title">{movie.Title}</div>
                         <div className="movies-element-info-year">({movie.Year})</div>
                         <div className="movies-element-info-rating">
-                            <i class="fas fa-star"></i> {this.props.rating}/10
+                            <i className="fas fa-star"></i> {this.props.rating}/10
                         </div>
                     </div>
                 </div>

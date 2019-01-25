@@ -25,11 +25,7 @@ class MusicTopAlbums extends Component {
                         isLoaded: true,
                         albums: result.topalbums.album
                     });
-                    // console.log(result.topalbums.album[0].image[2]['#text']);
                 },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
-                // exceptions from actual bugs in components.
                 (error) => {
                     this.setState({
                         isLoaded: true,

@@ -8,18 +8,18 @@ class MusicBlock extends Component {
         return (
             <section className="hero is-medium is-danger is-bold">
                 <a id="music"></a>
-                <div class="hero-body">
-                    <div class="container">
+                <div className="hero-body">
+                    <div className="container">
                         <h1 className='title is-2'>Музыка</h1>
-                        <div class="tile is-ancestor">
-                            <div class="tile is-parent">
-                                <article class="tile is-child box">
+                        <div className="tile is-ancestor">
+                            <div className="tile is-parent">
+                                <article className="tile is-child box">
                                     <p className="title is-4">Самые прослушиваемые альбомы</p>
                                     <MusicTopAlbums />
                                 </article>
                             </div>
-                            <div class="tile is-parent">
-                                <article class="tile is-child box">
+                            <div className="tile is-parent">
+                                <article className="tile is-child box">
                                     <p className="title is-4">Самые прослушиваемые треки</p>
                                     <MusicTopTracks  />
                                 </article>

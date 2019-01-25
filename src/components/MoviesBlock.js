@@ -11,8 +11,8 @@ class MoviesBlock extends Component {
         return (
             <section className="hero is-medium is-dark is-bold">
                 <a id="movies"></a>
-                <div class="hero-body">
-                    <div class="container">
+                <div className="hero-body">
+                    <div className="container">
                         <h1 className='title is-2'>Кино</h1>
                         <div className="movies-container">
                             <MoviesElement tt="tt0048261" rating="10" />

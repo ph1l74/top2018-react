@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Hero from './components/Hero';
 import Navigation from './components/Navigation';
-import MusicBlock from './components/MusicBlock';
-import MoviesBlock from './components/MoviesBlock';
+// import MusicBlock from './components/MusicBlock';
+// import MoviesBlock from './components/MoviesBlock';
 import CHGKBlock from './components/CHGKBlock';
 // import MusicTopAlbums from './components/MusicTopAlbums';
 
@@ -24,8 +24,8 @@ class App extends Component {
       <>
         <Hero title="TOP2018" bold="bold" />
         <Navigation links={links} />
-        <MusicBlock/>
-        <MoviesBlock />
+        {/* <MusicBlock/> */}
+        {/* <MoviesBlock /> */}
         <CHGKBlock />
         {/* <Hero title="Книги" size="medium" color="warning" bold="bold" anchor="books" /> */}
         {/* <Hero title="Фильмы" size="medium" color="dark" bold="bold" anchor="movies" /> */}
