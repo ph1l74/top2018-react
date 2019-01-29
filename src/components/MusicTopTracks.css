@@ -1,0 +1,41 @@
+.top-tracks-item {
+    border-radius: 0px 0px 6px 0px;
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    margin-bottom: 12px;
+    padding: 0px;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.top-tracks-item:hover {
+    background: #ff336057;
+}
+
+.top-tracks-item-info {
+    margin: 6px auto;
+}
+
+.top-tracks-item-info-name {
+    overflow: hidden;
+    height: 36px;
+}
+
+.top-tracks-item-cover-div {
+    height: 72px;
+    width: 72px;
+    float:left;
+    margin-right: 10px;
+}
+
+.top-tracks-item-cover-img {
+    height: 72px;
+    width: 72px;
+    border-bottom-right-radius: 50% 50%;
+}
+
+.top-tracks-playcount {
+    float:right;
+    margin: 18px 18px 0px 0px;
+    font-size: 1.4em;
+}

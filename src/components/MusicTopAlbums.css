@@ -1,0 +1,42 @@
+.top-albums-item {
+    border-radius: 0px 0px 6px 0px;
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    margin-bottom: 12px;
+    padding: 0px;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.top-albums-item:hover {
+    background: #ff336057;
+}
+
+
+.top-albums-item-info {
+    margin: 6px auto;
+}
+
+.top-albums-item-info-name {
+    overflow: hidden;
+    height: 36px;
+}
+
+.top-albums-item-cover-div {
+    height: 72px;
+    width: 72px;
+    float:left;
+    margin-right: 10px;
+}
+
+.top-albums-item-cover-img {
+    height: 72px;
+    width: 72px;
+    border-bottom-right-radius: 50% 50%;
+}
+
+.top-albums-playcount {
+    float:right;
+    margin: 18px 18px 0px 0px;
+    font-size: 1.4em;
+}
