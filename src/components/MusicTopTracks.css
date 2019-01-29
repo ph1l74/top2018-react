@@ -8,6 +8,10 @@
     transition: all 0.5s;
 }
 
+.top-tracks-item:hover {
+    background: #ff336057;
+}
+
 .top-tracks-item-info {
     margin: 6px auto;
 }

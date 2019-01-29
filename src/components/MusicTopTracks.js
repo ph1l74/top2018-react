@@ -24,11 +24,7 @@ class MusicTopTracks extends Component {
                         isLoaded: true,
                         tracks: result.toptracks.track
                     });
-                    // console.log(result.toptracks.track[0].image[2]['#text']);
                 },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
-                // exceptions from actual bugs in components.
                 (error) => {
                     this.setState({
                         isLoaded: true,

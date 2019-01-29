@@ -8,6 +8,11 @@
     transition: all 0.5s;
 }
 
+.top-albums-item:hover {
+    background: #ff336057;
+}
+
+
 .top-albums-item-info {
     margin: 6px auto;
 }
