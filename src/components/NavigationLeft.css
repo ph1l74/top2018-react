@@ -10,13 +10,17 @@
 }
 
 #navigation-left i {
+    transition: all 0.2s;
     color: white;
     font-size: 2em;
     line-height: 1.8;
 }
 
 #navigation-left i:hover {
-    text-shadow: 1px 1px 4px #c3c3c3, -1px -1px 4px #b7b7b7
+    text-shadow: 1px 1px 4px #c3c3c3, -1px -1px 4px #b7b7b7;
+    transition: all 0.2s;
+    
+
 }
 
 #navigation-left ul {
