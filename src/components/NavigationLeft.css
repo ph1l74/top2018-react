@@ -1,0 +1,33 @@
+#navigation-left {
+    transition: all 0.5s;
+    position: fixed;
+    top: 35%;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 6px;
+    background-color: #000000a2;
+    text-align: center;
+}
+
+#navigation-left i {
+    color: white;
+    font-size: 2em;
+    line-height: 1.8;
+}
+
+#navigation-left i:hover {
+    text-shadow: 1px 1px 4px #c3c3c3, -1px -1px 4px #b7b7b7
+}
+
+#navigation-left ul {
+    align-items: center;
+}
+
+.hidden {
+    left: -200px;
+}
+
+.fixed {
+    left: 20px;
+}
+
