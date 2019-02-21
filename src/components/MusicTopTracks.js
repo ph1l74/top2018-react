@@ -3,7 +3,6 @@ import './MusicTopTracks.css';
 import LoadingDiv from './LoadingDiv';
 import MusicTopTracksElement from './MusicTopTracksElement';
 
-
 class MusicTopTracks extends Component {
     constructor(props) {
         super(props);
@@ -14,10 +13,8 @@ class MusicTopTracks extends Component {
         };
     }
 
-    const
-
     componentDidMount() {
-        fetch("http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=ph1l74&period=12month&api_key=7f6a86c5dc710c6e2e6aa4d9066e4c14&format=json")
+        fetch("https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=ph1l74&period=12month&api_key=7f6a86c5dc710c6e2e6aa4d9066e4c14&format=json")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -37,7 +34,6 @@ class MusicTopTracks extends Component {
 
     render() {
         const { error, isLoaded, tracks } = this.state;
-        // console.log(tracks[0].image);
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {

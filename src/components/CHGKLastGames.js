@@ -23,7 +23,6 @@ class CHGKLastGames extends Component {
                     })
                 },
                 (error) => {
-                    console.log(error.message);
                     this.setState({
                         isLoaded: true,
                         error

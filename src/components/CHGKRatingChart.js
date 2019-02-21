@@ -43,7 +43,6 @@ class CHGKRatingChart extends Component {
           })
         },
         (error) => {
-          console.log(error.message);
           this.setState({
             isLoaded: true,
             error
@@ -55,7 +54,6 @@ class CHGKRatingChart extends Component {
 
   render() {
     const { error, isLoaded, chartData } = this.state;
-    console.log(chartData);
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {

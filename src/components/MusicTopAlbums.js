@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './MusicTopAlbums.css';
 import LoadingDiv from './LoadingDiv';
 import MusicTopAlbumsElement from './MusicTopAlbumsElement';
-// import '../music-note.svg';
 
 class MusicTopAlbums extends Component {
     constructor(props) {
@@ -17,9 +16,7 @@ class MusicTopAlbums extends Component {
     const
 
     componentDidMount() {
-        
-        // debugger;
-        fetch("http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=ph1l74&period=12month&api_key=7f6a86c5dc710c6e2e6aa4d9066e4c14&format=json")
+        fetch("https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=ph1l74&period=12month&api_key=7f6a86c5dc710c6e2e6aa4d9066e4c14&format=json")
             .then(res => res.json())
             .then(
                 (result) => {
