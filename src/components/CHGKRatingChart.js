@@ -19,7 +19,7 @@ class CHGKRatingChart extends Component {
   }
 
   componentDidMount() {
-    fetch("http://127.0.0.1:5000/rating")
+    fetch("https://mantissa-rating.herokuapp.com//rating")
       .then(res => res.json())
       .then(
         (result) => {
@@ -43,7 +43,6 @@ class CHGKRatingChart extends Component {
           })
         },
         (error) => {
-          console.log(error.message);
           this.setState({
             isLoaded: true,
             error
@@ -55,7 +54,6 @@ class CHGKRatingChart extends Component {
 
   render() {
     const { error, isLoaded, chartData } = this.state;
-    console.log(chartData);
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {

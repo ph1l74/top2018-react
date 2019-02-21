@@ -14,11 +14,11 @@ class App extends Component {
   render() {
 
     let links = [
-    { href: "#music", title: "Музыка" , icon: <i class="fas fa-music"></i>},
-    { href: "#movies", title: "Фильмы", icon: <i class="fas fa-film"></i>},
-    { href: "#travel", title: "Путешествия", icon: <i class="fas fa-map-marked-alt"></i>},
-    { href: "#chgk", title: "ЧГК", icon: <i class="fas fa-pen"></i>},
-    { href: "#books", title: "Книги", icon: <i class="fas fa-book"></i>},
+    { href: "#music", title: "Музыка" , icon: <i className="fas fa-music"></i>},
+    { href: "#movies", title: "Фильмы", icon: <i className="fas fa-film"></i>},
+    { href: "#travel", title: "Путешествия", icon: <i className="fas fa-map-marked-alt"></i>},
+    { href: "#chgk", title: "ЧГК", icon: <i className="fas fa-pen"></i>},
+    { href: "#books", title: "Книги", icon: <i className="fas fa-book"></i>},
     ]
 
     return (

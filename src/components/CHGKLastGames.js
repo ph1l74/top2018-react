@@ -13,7 +13,7 @@ class CHGKLastGames extends Component {
     }
 
     componentDidMount() {
-        fetch("http://127.0.0.1:5000/tournaments")
+        fetch("https://mantissa-rating.herokuapp.com/tournaments")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -23,7 +23,6 @@ class CHGKLastGames extends Component {
                     })
                 },
                 (error) => {
-                    console.log(error.message);
                     this.setState({
                         isLoaded: true,
                         error
@@ -41,8 +40,8 @@ class CHGKLastGames extends Component {
         } else {
             return (
                 <div>
-                    {games.slice(0, 5).map(game => (
-                        <div className='chgk-game'>
+                    {games.slice(0, 5).map((game, index) => (
+                        <div className='chgk-game' key={index}>
                             {game}
                         </div>
                     ))}

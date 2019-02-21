@@ -30,14 +30,14 @@ export default class NavigationLeft extends Component {
     }
     render() {
 
-        const links = this.props.links.map((link) =>
-            <li><a href={link.href}>{link.icon}</a></li>
+        const links = this.props.links.map((link, index) =>
+            <li key={index}><a href={link.href}>{link.icon}</a></li>
         )
 
         return (
             <div id="navigation-left" className="hidden">
                 <ul>
-                    <li><a href="#top"><i class="fas fa-arrow-up"></i></a></li>
+                    <li><a href="#top"><i className="fas fa-arrow-up"></i></a></li>
                     {links}
                 </ul>
             </div>

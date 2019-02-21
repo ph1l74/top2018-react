@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './MusicTopAlbums.css';
 import LoadingDiv from './LoadingDiv';
-// import '../music-note.svg';
+import MusicTopAlbumsElement from './MusicTopAlbumsElement';
 
 class MusicTopAlbums extends Component {
     constructor(props) {
@@ -16,8 +16,7 @@ class MusicTopAlbums extends Component {
     const
 
     componentDidMount() {
-        // debugger;
-        fetch("http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=ph1l74&period=12month&api_key=7f6a86c5dc710c6e2e6aa4d9066e4c14&format=json")
+        fetch("https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=ph1l74&period=12month&api_key=7f6a86c5dc710c6e2e6aa4d9066e4c14&format=json")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -44,34 +43,15 @@ class MusicTopAlbums extends Component {
         } else {
             return (
                 <div className="top-albums-container">
-                    {albums.slice(0, 10).map(item => (
-                        <div className="top-albums-item">
-                            <div className="top-albums-item-cover-div">
-                                <img
-                                    alt="Poster"
-                                    src={item.image[2]['#text']}
-                                    className="top-albums-item-cover-img"
-                                    onError={
-                                        (e) => {
-                                            e.target.onerror = null;
-                                            e.target.src = "nocover.jpg"
-                                        }
-                                    } />
-                            </div>
-                            <div className="top-albums-playcount">
-                                {item.playcount}
-                            </div>
-                            <div className="top-albums-item-info">
-                                <div className="top-albums-item-name">
-                                    <p className="title is-5">{item.name}</p>
-                                </div>
-                                <div className="top-albums-item-name">
-                                    {item.artist.name}
-                                </div>
-                            </div>
-
-                        </div>
-
+                    {albums.slice(0, 10).map((item, index) => (
+                        <MusicTopAlbumsElement
+                            key={index}
+                            imgURL={item.image[2]['#text']}
+                            playcount={item.playcount}
+                            name={item.name}
+                            artistName={item.artist.name}
+                            index={index}
+                        />
                     ))}
                 </div>
             );

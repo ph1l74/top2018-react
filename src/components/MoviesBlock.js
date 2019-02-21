@@ -9,11 +9,11 @@ import './MoviesBlock.css';
 class MoviesBlock extends Component {
     render() {
         return (
-            <section className="hero is-medium is-dark is-bold">
+            <section className="hero is-dark is-bold">
                 <a id="movies"></a>
                 <div className="hero-body">
                     <div className="container">
-                        <h1 className='title is-2'>Кино</h1>
+                        <h1 className='title is-2 wow fadeInDown' data-wow-iteration="1" data-wow-offset="80" data-wow-duration="0.5s">Кино</h1>
                         <div className="movies-container">
                             <MoviesElement tt="tt0048261" rating="10" />
                             <MoviesElement tt="tt0078788" rating="9" />
