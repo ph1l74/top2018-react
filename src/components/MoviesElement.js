@@ -14,7 +14,7 @@ class MoviesElement extends Component {
     }
 
     componentDidMount() {
-        fetch("http://www.omdbapi.com/?apikey=157b48b5&i=" + this.props.tt)
+        fetch("https://www.omdbapi.com/?apikey=157b48b5&i=" + this.props.tt)
             .then(res => res.json())
             .then(
                 (result) => {
