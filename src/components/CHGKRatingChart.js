@@ -19,7 +19,7 @@ class CHGKRatingChart extends Component {
   }
 
   componentDidMount() {
-    fetch("http://127.0.0.1:5000/rating")
+    fetch("https://mantissa-rating.herokuapp.com//rating")
       .then(res => res.json())
       .then(
         (result) => {

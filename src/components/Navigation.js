@@ -4,8 +4,8 @@ export default class Navigation extends Component {
 
     render() {
 
-        const links = this.props.links.map((link) =>
-            <li><a href={link.href}>{link.title}</a></li>
+        const links = this.props.links.map((link, index) =>
+            <li key={index}><a href={link.href}>{link.title}</a></li>
         )
 
         return (

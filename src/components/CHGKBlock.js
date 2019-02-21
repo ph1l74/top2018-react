@@ -8,11 +8,11 @@ class CHGKBlock extends Component {
 
     render() {
         return (
-            <section className="hero is-medium is-info is-bold">
+            <section className="hero is-info is-bold">
                 <a id="chgk"></a>
                 <div className="hero-body">
                     <div className="container">
-                        <h1 className='title is-2'>ЧГК</h1>
+                        <h1 className='title is-2 wow fadeInDown' data-wow-iteration="1" data-wow-offset="80" data-wow-duration="0.5s">ЧГК</h1>
                         <div className="tile is-ancestor">
                             <div className="tile is-parent">
                                 <article className="tile is-child box">
