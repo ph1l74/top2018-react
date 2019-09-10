@@ -8,8 +8,15 @@ import MoviesBlock from './components/MoviesBlock';
 import CHGKBlock from './components/CHGKBlock';
 import TravelBlock from './components/TravelBlock';
 import BooksBlock from './components/BooksBlock';
+import WOW from 'wowjs';
+
 
 class App extends Component {
+
+    componentDidMount() {
+      new WOW.WOW().init();
+    }
+
 
   render() {
 

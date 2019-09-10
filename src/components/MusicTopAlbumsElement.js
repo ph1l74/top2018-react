@@ -4,9 +4,9 @@ import WOW from 'wowjs';
 
 export default class MusicTopAlbumsElement extends Component {
 
-    componentDidMount() {
-        new WOW.WOW().init();
-    }
+    // componentDidMount() {
+    //     new WOW.WOW().init();
+    // }
 
     render() {
         return (

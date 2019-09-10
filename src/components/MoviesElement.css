@@ -19,7 +19,7 @@
     box-sizing:border-box;
     text-align:center;
     color:white;
-    padding-top:35%;
+    padding: 45% 10% 10% 10%;
     opacity: 1;
 }
 
@@ -43,4 +43,12 @@
 
 .movies-element-info-rating {
     font-size: 1.8em;
+}
+
+.movies-figure {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    height: 360px;
 }

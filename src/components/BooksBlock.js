@@ -8,7 +8,7 @@ const TravelBlock = () => {
             <a id="books"></a>
             <div className="hero-body">
                 <div className="container">
-                    <h1 className='title is-1'>Книги</h1>
+                    <h1 className='title is-2'>Книги</h1>
                     <div className="books-container">
                         Раздел еще в разработке
                     </div>

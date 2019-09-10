@@ -5,9 +5,9 @@ import WOW from 'wowjs';
 
 export default class TravelBlock extends Component {
 
-    componentDidMount() {
-        new WOW.WOW().init();
-    }
+    // componentDidMount() {
+    //     new WOW.WOW().init();
+    // }
 
     render() {
         return (
@@ -15,7 +15,7 @@ export default class TravelBlock extends Component {
                 <a id="travel"></a>
                 <div className="hero-body">
                     <div className="container">
-                        <h1 className='title is-1 wow fadeInDown' data-wow-iteration="1" data-wow-offset="80" data-wow-duration="0.5s">Путешествия</h1>
+                        <h1 className='title is-2 wow fadeInDown' data-wow-iteration="1" data-wow-offset="80" data-wow-duration="0.5s">Путешествия</h1>
                         <div className="travel-map-container">
                             <TravelMap width="1200" height="500" />
                         </div>

@@ -42,8 +42,8 @@ class MoviesElement extends Component {
             return (
 
                 <div className="movies-element">
-                    <figure className="image is-2by3">
-                        <img alt={movie.Title} src={movie.Poster}></img>
+                    <figure className="image is-2by3 movies-figure" style={{backgroundImage : 'url(' + movie.Poster + ')'}}>
+                        {/* <img alt={movie.Title}></img> */}
                         <div className="movies-element-info">
                             <div className="movies-element-info-title">{movie.Title}</div>
                             <div className="movies-element-info-year">({movie.Year})</div>
